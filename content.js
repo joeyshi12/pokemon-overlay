@@ -327,10 +327,6 @@ function toCoordinate(row, col) {
     };
 }
 
-window.addEventListener("resize", () => {
-    resize();
-});
-
 async function main() {
     const pokemonNames = ["Gengar", "Misdreavus", "Litwick"];
     const animDataList = await Promise.all(pokemonNames.map(name => loadAnimation(name)));
@@ -365,6 +361,10 @@ async function main() {
 
     requestAnimationFrame(update);
 }
+
+window.addEventListener("resize", () => {
+    resize();
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(canvas);
