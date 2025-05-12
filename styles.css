@@ -1,0 +1,13 @@
+body {
+    width: 200px;
+}
+
+center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 0;
+}
